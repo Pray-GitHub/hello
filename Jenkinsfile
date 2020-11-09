@@ -19,6 +19,12 @@ pipeline {
       }
     }
 
+    stage('Archival') {
+      steps {
+        archiveArtifacts '+'
+      }
+    }
+
   }
   environment {
     Maven = 'Maven3.6.3'
