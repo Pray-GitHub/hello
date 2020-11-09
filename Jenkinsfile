@@ -7,20 +7,20 @@ stages {
         stage('Build') {
             steps   {
                 echo 'Building..'
-                sh mvn compile
+                sh 'mvn compile'
                     }
             }//Build
        
         stage('Test') {
             steps {
                 echo 'Testing'
-                sh mvn test
+                sh 'mvn test'
                     }
                 }//Testing
         stage('Package') {
             steps {
                 echo 'Packaging.'
-                sh mvn package
+                sh 'mvn package'
             }
         }//Package
     }//stages
