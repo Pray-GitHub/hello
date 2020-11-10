@@ -21,8 +21,7 @@ pipeline {
 
     stage('Archival') {
       steps {
-        archiveArtifacts '*'
-        archiveArtifacts(onlyIfSuccessful: true, allowEmptyArchive: true, artifacts: '*')
+        archiveArtifacts(onlyIfSuccessful: true, artifacts: '*/*.jar')
       }
     }
 
