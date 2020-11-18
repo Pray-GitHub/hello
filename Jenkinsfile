@@ -27,6 +27,6 @@ pipeline {
 
   }
   environment {
-    Maven = 'Maven3.6.3'
+    maven = 'maven363'
   }
 }
